@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+  <meta name="apitoken" content="qmtUodqCd7nyMX8jvA9tNXE8NZ8VQVwJPPR6LzMGmshaRWaSo6kr7FwxiUXQ6D1IWU5MQIUQIFQKc65vehnrkh97Em">
+  <title>REGISTRACIJA</title>
+
+  <link rel="stylesheet" href="css/registracija.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="js/registracija.js"></script>
+
+
+
+</head>
+<body>
+<h1>REGISTRACIJA KORISNIKA</h1>
+
+<div id="container">
+  <div id="container_form">
+  <form id="forma" method="POST" action="https://vsis.mef.edu.rs/projekat/ulaznice/public_html/api/register">
+
+    <label for="imeprezime">IME I PREZIME:</label>
+    <input type="text" id="imeprezime" placeholder="unesite ime i prezime" required minlength="5" maxlength="180">
+    <div id="provera_imeprezime" class="div_hidden" hidden></div>
+
+
+    <label for="telefon">BROJ TELEFONA:</label>
+    <input type="tel" id="telefon" placeholder="unesite broj telefona" required minlength="9" maxlength="14">
+    <div id="provera_telefon" class="div_hidden" hidden></div>
+
+
+    <label for="email">E-MAIL:</label>
+    <input type="email" id="email" placeholder="unesite e-mail">
+    <div id="provera_email" class="div_hidden" hidden></div>
+
+    <label for="lozinka">LOZINKA:</label>
+    <input type="password" id="lozinka" placeholder="unesite lozinku" required>
+    <div id="provera_lozinka" class="div_hidden" hidden></div>
+
+    <label for="ponovljenalozinka">PONOVITI LOZINKA:</label>
+    <input type="password" id="ponovljenalozinka" placeholder="ponovo unesite lozinku" required>
+    <div id="provera_ponovljenalozinka" class="div_hidden" hidden></div>
+
+    <button type="submit" class="button">REGISTRUJ SE</button>
+    <div id="provera_registracija" class="div_hidden" hidden></div>
+
+  </form>
+  </div>
+</div>
+
+</body>
+</html>

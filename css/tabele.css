@@ -1,0 +1,33 @@
+table {
+
+    border: solid black 1px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #bd1c83;
+}
+
+th, td {
+
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border: solid black 1px;
+}
+
+th:first-child, td:first-child {
+    text-align: center;
+}
+
+#uloge tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#uloge tr:hover {
+    background-color: #eaeaea;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="apitoken" content="qmtUodqCd7nyMX8jvA9tNXE8NZ8VQVwJPPR6LzMGmshaRWaSo6kr7FwxiUXQ6D1IWU5MQIUQIFQKc65vehnrkh97Em">
+    <link rel="stylesheet" href="css/prijava.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/prijava.js"></script>
+    <title>PRIJAVA</title>
+    
+</head>
+<body>
+
+<h1>PRIJAVA KORISNIKA</h1>
+
+<form id="forma" method="post" action="https://vsis.mef.edu.rs/projekat/ulaznice/public_html/api/login">
+
+    <label for="email">E-MAIL:</label>
+    <input type="email" id="email" placeholder="unesite e-mail" required>
+    <div id="provera_email" class="div_hidden" hidden></div>
+
+    <label for="lozinka">LOZINKA:</label>
+    <input type="password" id="lozinka" placeholder="unesite lozinku" required>
+    <div id="provera_lozinka" class="div_hidden" hidden></div>
+
+    <button type="submit" class="button">PRIJAVI SE</button>
+    <div id="provera_ponovljenalozinka" class="div_hidden" hidden></div>
+
+</form>
+
+
+
+</nav>
+</body>
+<footer>
+    <p><a href="administrator.html" target="_blank">Administrator</a></p>
+</footer>
+</html>
